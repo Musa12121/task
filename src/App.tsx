@@ -1,6 +1,8 @@
 import { createContext, useContext, useState } from "react";
+import ThemeProvider from "./ThemeProvider";
+import ThemeToggle from "./ThemeToggle";
+import {ThemeContext} from './ThemeContext'
 
-const ThemeContext = createContext({});
 
 function Card() {
   let theme = useContext(ThemeContext);
@@ -96,27 +98,7 @@ function App() {
   );
 }
 
-function ThemeProvider({ children }) {
-  return <>{children}</>;
-}
 
-function ThemeToggle() {
-  let theme = useContext(ThemeContext);
-  return (
-    <div>
-      <button
-        style={{
-          padding: "10px 15px",
-          fontSize: "15px",
-          borderRadius: "10px",
-          border: "1px solid",
-        }}
-        onClick={theme.toggle}
-      >
-        Toggle
-      </button>
-    </div>
-  );
-}
+
 
 export default App;
