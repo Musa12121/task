@@ -20,13 +20,16 @@ function Card() {
       }}
     >
       <h1>This is title</h1>
-      <p>
+      <p style={{fontSize:'18px'}}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit omnis
         alias modi explicabo libero consectetur placeat consequatur sint animi
         pariatur iure ipsam, aut praesentium sunt, nemo, earum rerum voluptatum
         veniam!
       </p>
-      <button>Click</button>
+      <button style={{padding: "10px 15px",
+          fontSize: "15px",
+          borderRadius: "10px",
+          border: "1px solid",}}>Click</button>
     </div>
   );
 }
